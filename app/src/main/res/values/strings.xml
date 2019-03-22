@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Solid Ace Furniture</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--API-->
+    <string name="apiUrl">http://192.168.1.100/andrew.com/AceFurniture-API/?endpoint=</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_cart">Cart</string>
+    <string name="title_activity_checkout_form">Select Payment Method</string>
+    <string name="title_activity_checkout">CheckoutActivity</string>
+
+    <string name="facebook_application_id" translatable="false">547858449042539</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb547858449042539</string>
+    <string name="title_activity_payment_method">Select Payment Method</string>
+
+</resources>

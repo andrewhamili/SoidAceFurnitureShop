@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:clickable="false"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnIncrease"
+                android:layout_width="38dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="8dp"
+                android:text="-"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imgProductImage"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5sp"
+                android:contentDescription="Image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.018" />
+
+            <TextView
+                android:id="@+id/lblProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:maxEms="5"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:text="Product 1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnDecrease"
+                app:layout_constraintStart_toEndOf="@+id/lblUnitPrice"
+                app:layout_constraintTop_toTopOf="@+id/imgProductImage"
+                app:layout_constraintVertical_bias="0.121" />
+
+            <TextView
+                android:id="@+id/lblUnitPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgProductImage"
+                android:layout_alignStart="@+id/lblProductName"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:maxLines="1"
+                android:text="PHP 1500.00"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgProductImage"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btnDecrease"
+                android:layout_width="38dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:text="-"
+                app:layout_constraintBottom_toBottomOf="@+id/lblQuantity"
+                app:layout_constraintEnd_toStartOf="@+id/lblQuantity"
+                app:layout_constraintTop_toTopOf="@+id/lblQuantity"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/lblQuantity"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="#eeeeee"
+                android:gravity="center"
+                android:text="999"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@+id/btnIncrease"
+                app:layout_constraintEnd_toStartOf="@+id/btnIncrease"
+                app:layout_constraintTop_toTopOf="@+id/btnIncrease"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

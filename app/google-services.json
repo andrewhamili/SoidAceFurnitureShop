@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "913065615303",
+    "firebase_url": "https://solid-ace-furniture.firebaseio.com",
+    "project_id": "solid-ace-furniture",
+    "storage_bucket": "solid-ace-furniture.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913065615303:android:c87f0a346791c8ad",
+        "android_client_info": {
+          "package_name": "com.project.orderingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "913065615303-65o81l0rfefnccl4l17id01ci03i3a14.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.orderingapp",
+            "certificate_hash": "641616210bc702ffb4e34db789afe540fdc6d11e"
+          }
+        },
+        {
+          "client_id": "913065615303-aobgsli42k6r0qjee8gmhec7a7nk55m6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.orderingapp",
+            "certificate_hash": "2a09b3a3129928c951424fbd22bd904d4e265823"
+          }
+        },
+        {
+          "client_id": "913065615303-r9j2se1opcce3lfe06kn9bdmg6ofdl1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ3n9wgUKeUAvgf5KyMNiZYFgWV97sQ5k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "913065615303-r9j2se1opcce3lfe06kn9bdmg6ofdl1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
