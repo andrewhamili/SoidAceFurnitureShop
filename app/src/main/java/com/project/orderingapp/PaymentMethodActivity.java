@@ -1,6 +1,7 @@
 package com.project.orderingapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -14,7 +15,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
-import com.project.orderingapp.Async.Checkout;
 import com.project.orderingapp.Models.PaymentMethod;
 import com.project.orderingapp.SharedPreferences.PaymentMethods;
 import com.squareup.picasso.Picasso;
@@ -51,7 +51,14 @@ public class PaymentMethodActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                new Checkout(PaymentMethodActivity.this, paymentMethodList.get(i).id).execute();
+                Intent intent = new Intent(PaymentMethodActivity.this, PaymentMethodDetailsActivity.class);
+
+                intent.putExtra("paymentMethodId", paymentMethodList.get(i).id);
+                intent.putExtra("paymentMethodName", paymentMethodList.get(i).name);
+
+                startActivity(intent);
+
+                //new Checkout(PaymentMethodActivity.this, paymentMethodList.get(i).id, paymentMethodList.get(i).name).execute();
 
             }
         });

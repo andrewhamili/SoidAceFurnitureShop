@@ -23,12 +23,14 @@ public class Checkout extends AsyncTask<Void, Void, Void> {
     Context context;
     ProgressDialog progressDialog;
     int paymentMethodId;
+    String paymentMethodNumber;
 
     Boolean asyncSuccess = false;
 
-    public Checkout(Context context, int paymentMethodId) {
+    public Checkout(Context context, int paymentMethodId, String paymentMethodNumber) {
         this.context = context;
         this.paymentMethodId = paymentMethodId;
+        this.paymentMethodNumber = paymentMethodNumber;
     }
 
     @Override
@@ -53,6 +55,7 @@ public class Checkout extends AsyncTask<Void, Void, Void> {
             HashMap<String, Object> orderInfo = new HashMap<>();
             orderInfo.put("userId", User.getUserId(context));
             orderInfo.put("paymentMethodId", paymentMethodId);
+            orderInfo.put("paymentMethodNumber", paymentMethodNumber);
 
             List<CartItem> cartItemList = new ArrayList<>();
 

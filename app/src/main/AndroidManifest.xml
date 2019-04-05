@@ -38,6 +38,10 @@
         <activity
             android:name=".PaymentMethodActivity"
             android:label="@string/title_activity_payment_method"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PaymentMethodDetailsActivity"
+            android:label="@string/title_activity_payment_method_details"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
